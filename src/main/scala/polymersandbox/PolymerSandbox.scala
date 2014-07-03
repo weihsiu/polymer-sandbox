@@ -7,7 +7,7 @@ import scala.scalajs.js.JSApp
 object PolymerSandbox extends JSApp {
   def main(): Unit = {
     g.Polymer("my-element", lit(
-      age = 25,
+      age = 18,
       name = "Walter",
       color = "red",
       owner = "eric",
