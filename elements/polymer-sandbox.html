@@ -1,0 +1,23 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<script src="../target/scala-2.11/polymer-sandbox-fastopt.js"></script>
+<script src="../target/scala-2.11/polymer-sandbox-launcher.js"></script>
+<polymer-element name="my-element" attributes="owner color">
+  <template>
+    This is <b>{{owner}}</b>'s age-slider.
+    <b>{{name}}</b> lets me borrow it.
+    He likes the color <span style="color:{{color}}">{{color}}</span>.
+    I am <b>{{age}}</b> years old.
+    <p>
+      <button on-click="{{setFocus}}">Set focus to text input</button>
+      <label for="ageInput">Age:</label>
+      <input id="ageInput" type="range" value="{{age}}">
+      <label for="nameInput">Name:</label>
+      <input id="nameInput" value="{{name}}" placeholder="Enter name...">
+    </p>
+  </template>
+</polymer-element>
+<polymer-element name="my-element2">
+  <template>
+    <h1>{{name}}</h1>
+  </template>
+</polymer-element>
